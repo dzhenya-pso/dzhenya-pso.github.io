@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Personal Profile
 
 👋 **Hi, welcome to my GitHub!**
@@ -39,6 +38,3 @@
    - [Paper](https://doi.org/10.1007/s44196-025-00902-8) | [Code](https://github.com/DSCPSO)
 ---
 > 💡 **Note**：If you have any questions, please feel free to contact me.
-=======
-# dzhenya-pso.github.io
->>>>>>> a4b7091fd5d075c941d22df0795f55f81e941467
