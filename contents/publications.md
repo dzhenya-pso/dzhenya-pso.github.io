@@ -12,4 +12,4 @@
    **Zhenya Diao**, Fei Yu etc.  
    - Published in: 2025  
    - About: Proposing an improved fitness landscape strategy combining phenotypic entropy and clustering methods.  
-   - [Paper](https://doi.org/10.1007/s44196-025-00902-8) | [Code](https://github.com/DSCPSO)
+   - [Paper](https://doi.org/10.1007/s44196-025-00902-8) | [Code](https://github.com/dzhenya-pso/DSCPSO)
