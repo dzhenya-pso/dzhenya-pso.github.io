@@ -34,7 +34,7 @@ nav a:hover {
 }
 
 .container {
-    max-width: 900px;
+    max-width: 1200px;
     margin: 80px auto 20px auto; /* 80px 用于给顶部导航留空间 */
     padding: 20px;
     background: white;
@@ -67,12 +67,13 @@ img.profile-img {
   right: 10px;    /* 右边距 */
   bottom: 10px;   /* 底部距 */
   color: black;
-  font-family: "KaiTi", "STKaiti", serif; /* 楷体 */
+  font-family: 'Zhi Mang Xing', cursive; /* 改成手写书法风 */
   font-size: 1.5em;
-  background-color: rgba(255, 255, 255, 0.6); /* 半透明白底，更清晰 */
+  background-color: rgba(255, 255, 255, 0.6); /* 半透明白底 */
   padding: 8px 12px;
   border-radius: 6px;
   user-select: none; /* 防止选中文字 */
 }
+
 
 
