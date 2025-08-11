@@ -4,137 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zhenya Diao - Personal Profile</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-        }
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background: #222;
-            color: white;
-            padding: 10px 20px;
-        }
-        header h1 {
-            margin: 0;
-        }
-        nav a {
-            color: white;
-            margin-left: 20px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        .container {
-            max-width: 900px;
-            margin: auto;
-            padding: 20px;
-        }
-        .profile-img {
-            float: left;
-            margin-right: 20px;
-            border-radius: 10px;
-            max-width: 150px;
-        }
-        section {
-            margin-bottom: 40px;
-        }
-        h2 {
-            border-bottom: 2px solid #ddd;
-            padding-bottom: 5px;
-        }
-        .award-list, .experience-list, .pub-list {
-            list-style: none;
-            padding: 0;
-        }
-        .award-list li, .experience-list li, .pub-list li {
-            margin-bottom: 10px;
-        }
-    </style>
+    <link rel="stylesheet" href="contents/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 <body>
 
-    <!-- 顶部导航 -->
+    <!-- 固定顶部导航 -->
     <header>
         <h1>Zhenya Diao</h1>
         <nav>
-            <a href="#home">Home</a>
-            <a href="#awards">Awards</a>
-            <a href="#experience">Experience</a>
-            <a href="#publications">Publications</a>
+            <a href="#" onclick="loadMarkdown('contents/home.md')">Home</a>
+            <a href="#" onclick="loadMarkdown('contents/awards.md')">Awards</a>
+            <a href="#" onclick="loadMarkdown('contents/experience.md')">Experience</a>
+            <a href="#" onclick="loadMarkdown('contents/publications.md')">Publications</a>
         </nav>
     </header>
-
-    <div class="container">
-
-        <!-- 个人介绍 -->
-        <section id="home">
-            <img src="your-photo.jpg" alt="Profile Photo" class="profile-img">
-            <p>👋 <strong>Hi, welcome to my GitHub!</strong></p>
-            <p>🧑‍💻 <strong>Name</strong>: Zhenya Diao</p>
-            <p>📍 <strong>Location</strong>: Fujian, China</p>
-            <p>👀 <strong>Interests</strong>: Evolutionary Computation, Machine Learning</p>
-            <p>🌱 <strong>Currently Learning</strong>: Evolutionary Algorithms & Their Applications</p>
-            <p>📧 <strong>Email</strong>: <a href="mailto:dzhenya@163.com">dzhenya@163.com</a></p>
-            <p>🐙 <strong>GitHub</strong>: <a href="https://dzhenya-pso.github.io">https://dzhenya-pso.github.io</a></p>
-            <p>🌐 <strong>Personal homepage</strong>: <a href="https://dzhenya-pso.github.io">https://dzhenya-pso.github.io</a></p>
-        </section>
-
-        <!-- Awards -->
-        <section id="awards">
-            <h2>🏆✨ Awards</h2>
-            <ul class="award-list">
-                <li>2024 校级优秀研究生奖学金</li>
-                <li>2023 全国大学生数学建模竞赛二等奖</li>
-                <li>2022 国家奖学金</li>
-            </ul>
-        </section>
-
-        <!-- Experience -->
-        <section id="experience">
-            <h2>💼 Experience</h2>
-            <ul class="experience-list">
-                <li>
-                    <strong>基于PSO算法的特征选择平台</strong> (2023.10 - 2024.01)
-                    <p>简介：利用PSO优化特征选择过程，提升分类性能。</p>
-                    <ul>
-                        <li>引入特征加权机制，提高特征选择可解释性</li>
-                        <li>结合多目标优化策略权衡分类准确率与特征数</li>
-                    </ul>
-                    <p>成果：在多个UCI数据集上准确率提高 5%-8%</p>
-                    <p><a href="https://github.com/your-project">项目地址</a></p>
-                </li>
-            </ul>
-        </section>
-
-        <!-- Publications -->
-        <section id="publications">
-            <h2>📄 Publications</h2>
-            <ul class="pub-list">
-                <li>
-                    <strong>FLPSO</strong> — Zhenya Diao, Fei Yu etc.
-                    <p>Published in: 2024 IEEE Congress on Evolutionary Computation (CEC), 2024</p>
-                    <p>About: Propose strategies for improving the fitness landscape.</p>
-                    <p><a href="https://doi.org/10.1109/CEC60901.2024.10611936">Paper</a> | 
-                       <a href="https://dzhenya-pso.github.io">Code</a></p>
-                </li>
-                <li>
-                    <strong>DSCPSO</strong> — Zhenya Diao, Fei Yu etc.
-                    <p>Published in: 2025</p>
-                    <p>About: Proposing an improved fitness landscape strategy combining phenotypic entropy and clustering methods.</p>
-                    <p><a href="https://doi.org/10.1007/s44196-025-00902-8">Paper</a> | 
-                       <a href="https://github.com/DSCPSO">Code</a></p>
-                </li>
-            </ul>
-        </section>
-
+	
+	
+    <!-- 内容容器 -->
+    <div class="container" id="content">
+        Loading...
     </div>
+
+    <script>
+        function loadMarkdown(file) {
+            fetch(file)
+                .then(response => response.text())
+                .then(text => {
+                    document.getElementById('content').innerHTML = marked.parse(text);
+                })
+                .catch(err => {
+                    document.getElementById('content').innerHTML = "Error loading content.";
+                });
+        }
+
+        // 初始加载 Home
+        loadMarkdown('contents/home.md');
+    </script>
 
 </body>
 </html>

@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background: #f9f9f9;
+}
+
+header {
+    display: flex;
+    justify-content: flex-start; /* 从左开始排列 */
+    align-items: center;
+    background: #222;
+    color: white;
+    padding: 10px 20px;
+    gap: 40px; /* 标题与导航之间的间距 */
+}
+
+
+header h1 {
+    margin-right: 50px; /* 给标题和导航留空间 */
+}
+
+
+nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 900px;
+    margin: 80px auto 20px auto; /* 80px 用于给顶部导航留空间 */
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+}
+
+img.profile-img {
+    float: left;
+    margin-right: 20px;
+    border-radius: 10px;
+    max-width: 150px;
+}
+
+.banner-container {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.background-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-height: 30vh; /* 控制图片高度，视口高度的一半 */
+  object-fit: cover;
+}
+
+.banner-text {
+  position: absolute;
+  right: 10px;    /* 右边距 */
+  bottom: 10px;   /* 底部距 */
+  color: black;
+  font-family: "KaiTi", "STKaiti", serif; /* 楷体 */
+  font-size: 1.5em;
+  background-color: rgba(255, 255, 255, 0.6); /* 半透明白底，更清晰 */
+  padding: 8px 12px;
+  border-radius: 6px;
+  user-select: none; /* 防止选中文字 */
+}
+
+
