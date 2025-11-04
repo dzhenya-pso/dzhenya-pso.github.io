@@ -8,17 +8,19 @@ body {
 
 header {
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-start; /* 从左开始排列 */
     align-items: center;
     background: #222;
     color: white;
     padding: 10px 20px;
-    gap: 40px;
+    gap: 40px; /* 标题与导航之间的间距 */
 }
 
+
 header h1 {
-    margin-right: 50px;
+    margin-right: 50px; /* 给标题和导航留空间 */
 }
+
 
 nav a {
     color: white;
@@ -33,7 +35,7 @@ nav a:hover {
 
 .container {
     max-width: 1200px;
-    margin: 80px auto 20px auto;
+    margin: 80px auto 20px auto; /* 80px 用于给顶部导航留空间 */
     padding: 20px;
     background: white;
     border-radius: 10px;
@@ -46,41 +48,38 @@ img.profile-img {
     max-width: 150px;
 }
 
-/* 🌄 横幅整体区域 */
 .banner-container {
-    position: relative;
-    text-align: center;
-    overflow: hidden;
-    max-width: 100%;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
 }
 
-/* 背景图 */
 .background-img {
-    width: 100%;
-    height: auto;
-    display: block;
-    max-height: 50vh;
-    object-fit: cover;
+  width: 100%;
+  height: auto;
+  display: block;
+  max-height: 30vh; /* 控制图片高度，视口高度的一半 */
+  object-fit: cover;
 }
 
-/* 中文横幅文字 */
 .banner-text {
-    position: absolute;
-    right: 20px;
-    bottom: 80px; /* 上移，给副标题留空间 */
-    color: black;
-    font-family: 'Zhi Mang Xing', cursive;
-    font-size: 1.8em;
-    background-color: rgba(255, 255, 255, 0.6);
-    padding: 8px 12px;
-    border-radius: 6px;
+  position: absolute;
+  right: 10px;    /* 右边距 */
+  bottom: 10px;   /* 底部距 */
+  color: black;
+  font-family: 'Zhi Mang Xing', cursive; /* 改成手写书法风 */
+  font-size: 1.5em;
+  background-color: rgba(255, 255, 255, 0.6); /* 半透明白底 */
+  padding: 8px 12px;
+  border-radius: 6px;
+  user-select: none; /* 防止选中文字 */
 }
 
-/* 英文副标题（带底纹） */
+/* 英文（带底纹） */
 .sub-banner-text {
     position: absolute;
-    right: 20px;
-    bottom: 40px;
+    right: 10px;
+    bottom: 30px;
     font-size: 1.3em;
     color: #ffffff;
     background: linear-gradient(120deg, #00416A, #E4E5E6);
@@ -93,6 +92,9 @@ img.profile-img {
 
 /* 动态GIF样式 */
 .thinking-gif {
+	position: absolute;
+    right: 10px;
+    bottom: 60px;
     display: block;
     margin: 20px auto;
     max-width: 180px;
