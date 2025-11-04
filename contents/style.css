@@ -75,14 +75,14 @@ img.profile-img {
   user-select: none; /* 防止选中文字 */
 }
 
-/* 英文（带底纹） */
+/* 英文（带暖色渐变底纹） */
 .sub-banner-text {
     position: absolute;
     right: 10px;
-    bottom: calc(10px + 2em); /* 保证英文在中文上方留出空间 */
+    bottom: 10px; /* 在中文下方 10px */
     font-size: 1.3em;
     color: #ffffff;
-    background: linear-gradient(120deg, #00416A, #E4E5E6);
+    background: linear-gradient(120deg, #FF7E5F, #FFB88C); /* 暖色渐变 */
     padding: 6px 14px;
     border-radius: 6px;
     font-weight: bold;
@@ -94,10 +94,11 @@ img.profile-img {
 .thinking-gif {
     position: absolute;
     right: 10px;
-    bottom: calc(10px + 5em); /* 保证在英文和中文之上 */
+    bottom: 60px; /* 在英文上方留空间 */
     display: block;
     max-width: 160px;
     border-radius: 10px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.3);
 }
+
 
