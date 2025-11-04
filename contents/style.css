@@ -79,7 +79,7 @@ img.profile-img {
 .sub-banner-text {
     position: absolute;
     right: 10px;
-    bottom: 30px;
+    bottom: calc(10px + 2em); /* 保证英文在中文上方留出空间 */
     font-size: 1.3em;
     color: #ffffff;
     background: linear-gradient(120deg, #00416A, #E4E5E6);
@@ -92,11 +92,12 @@ img.profile-img {
 
 /* 动态GIF样式 */
 .thinking-gif {
-	position: absolute;
+    position: absolute;
     right: 10px;
-    bottom: 60px;
+    bottom: calc(10px + 5em); /* 保证在英文和中文之上 */
     display: block;
-    margin: 20px auto;
-    max-width: 180px;
+    max-width: 160px;
     border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
 }
+
