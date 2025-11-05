@@ -75,25 +75,26 @@ img.profile-img {
   user-select: none; /* 防止选中文字 */
 }
 
-/* 英文（带暖色渐变底纹） */
+/* 英文（暖色渐变底纹） */
 .sub-banner-text {
-    position: absolute;
-    right: 10px;
-    bottom: 10px; /* 在中文下方 10px */
-    font-size: 1.3em;
-    color: #ffffff;
-    background: linear-gradient(120deg, #FF7E5F, #FFB88C); /* 暖色渐变 */
-    padding: 6px 14px;
-    border-radius: 6px;
-    font-weight: bold;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+  position: absolute;
+  left: 10px;
+  bottom: 30px; /* 比中文低30px */
+  font-size: 1.3em;
+  color: #fff;
+  background: linear-gradient(120deg, #FF9A8B, #FF6A88, #FF99AC); /* 柔和暖色 */
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-weight: bold;
+  font-family: 'Zhi Mang Xing', cursive; /* ✅ 与中文相同字体 */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
 }
 
 /* 动态GIF样式 */
 .thinking-gif {
     position: absolute;
-    right: 10px;
+    left: 10px;
     bottom: 60px; /* 在英文上方留空间 */
     display: block;
     max-width: 160px;
