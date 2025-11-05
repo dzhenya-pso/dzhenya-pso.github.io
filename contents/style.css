@@ -75,31 +75,32 @@ img.profile-img {
   user-select: none; /* 防止选中文字 */
 }
 
-/* 英文（暖色渐变底纹） */
+/* 英文（灰底黑字 + 花体英文字体，浮动在右侧 GIF 上方） */
 .sub-banner-text {
-  position: absolute;
-  left: 10px;
-  bottom: 30px; /* 比中文低30px */
-  font-size: 1.3em;
-  color: #fff;
-  background: linear-gradient(120deg, #FF9A8B, #FF6A88, #FF99AC); /* 柔和暖色 */
+  float: right;
+  margin-right: 20px;
+  margin-top: 10px;
+  margin-bottom: 8px; /* 与 GIF 保持一点距离 */
+  font-size: 1.6em;
+  color: #222; /* 深灰字体 */
+  background-color: rgba(240, 240, 240, 0.9); /* 柔和浅灰底 */
   padding: 6px 14px;
-  border-radius: 6px;
-  font-weight: bold;
-  font-family: 'Zhi Mang Xing', cursive; /* ✅ 与中文相同字体 */
-  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+  border-radius: 8px;
+  font-weight: normal;
+  font-family: 'Great Vibes', cursive; /* 优雅花体英文字体 */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+  text-shadow: none;
+  clear: both; /* 防止与上方浮动元素重叠 */
 }
 
-/* 动态GIF样式 */
+/* 动态GIF样式（浮动右侧） */
 .thinking-gif {
-    position: absolute;
-    left: 10px;
-    bottom: 60px; /* 在英文上方留空间 */
-    display: block;
-    max-width: 160px;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  float: right;
+  margin-right: 20px;
+  border-radius: 10px;
+  max-width: 150px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
 }
+
 
 
