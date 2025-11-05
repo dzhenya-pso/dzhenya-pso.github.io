@@ -21,7 +21,6 @@ header h1 {
     margin-right: 50px; /* 给标题和导航留空间 */
 }
 
-
 nav a {
     color: white;
     margin-left: 20px;
@@ -48,6 +47,14 @@ img.profile-img {
     max-width: 150px;
 }
 
+/* 动态GIF样式（浮动右侧） */
+.thinking-gif {
+  float: right;
+  margin-right: 20px;
+  border-radius: 10px;
+  max-width: 150px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
 .banner-container {
   position: relative;
   max-width: 100%;
@@ -75,32 +82,7 @@ img.profile-img {
   user-select: none; /* 防止选中文字 */
 }
 
-/* 英文（灰底黑字 + 花体英文字体，浮动在右侧 GIF 上方） */
-.sub-banner-text {
-  float: right;
-  margin-right: 20px;
-  margin-top: 10px;
-  margin-bottom: 8px; /* 与 GIF 保持一点距离 */
-  font-size: 1.6em;
-  color: #222; /* 深灰字体 */
-  background-color: rgba(240, 240, 240, 0.9); /* 柔和浅灰底 */
-  padding: 6px 14px;
-  border-radius: 8px;
-  font-weight: normal;
-  font-family: 'Great Vibes', cursive; /* 优雅花体英文字体 */
-  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
-  text-shadow: none;
-  clear: both; /* 防止与上方浮动元素重叠 */
-}
 
-/* 动态GIF样式（浮动右侧） */
-.thinking-gif {
-  float: right;
-  margin-right: 20px;
-  border-radius: 10px;
-  max-width: 150px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
-}
 
 
 
