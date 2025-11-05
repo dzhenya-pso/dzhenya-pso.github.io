@@ -1,16 +1,9 @@
 <div class="banner-container">
   <img src="Fig/backgroundimage.jpg" alt="Background" class="background-img">
-
-  <!-- 中文横幅文字 -->
   <div class="banner-text">一样的天空, 不一样的蓝</div>
-
-  <!-- 英文横幅副标题 -->
-  <div class="sub-banner-text">Brain, get a move on...</div>
-
-  <!-- 动态GIF -->
-  <img src="Fig/lufeithink.gif" alt="Thinking..." class="thinking-gif">
 </div>
-
+<!-- 动态GIF -->
+  <img src="Fig/lufeithink.gif" alt="Brain, get a move on..." class="thinking-gif">
 <!-- 个人头像 -->
 <img src="Fig/lufei.jpg" alt="Zhenya Diao" class="profile-img">
 
