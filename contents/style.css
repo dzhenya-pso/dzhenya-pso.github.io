@@ -47,20 +47,41 @@ img.profile-img {
 }
 
 /* 动态GIF样式（浮动右侧） */
+/* 容器样式，让图片和文字在一起 */
+.brain-container {
+  float: right;
+  margin: 50px 20px 20px 20px;
+  text-align: center;
+}
+
 .thinking-gif {
-  float: right;
-  margin: 20px 20px 0 0; /* 上 右 下 左 */
   border-radius: 10px;
   max-width: 150px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  display: block; /* 让图片单独占一行 */
 }
+
 .bouncing-brain {
-  float: right;
-  margin: 0 20px 0 0; /* 上 右 下 左 */
+  margin-top: 10px;
+  padding: 8px 12px;
   border-radius: 10px;
-  max-width: 150px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  animation: bounce 2s infinite;
 }
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
 .banner-container {
   position: relative;
   max-width: 100%;
