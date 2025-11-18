@@ -16,7 +16,6 @@ header {
     gap: 40px; /* 标题与导航之间的间距 */
 }
 
-
 header h1 {
     margin-right: 50px; /* 给标题和导航留空间 */
 }
@@ -50,25 +49,17 @@ img.profile-img {
 /* 动态GIF样式（浮动右侧） */
 .thinking-gif {
   float: right;
-  margin-right: 20px;
+  margin: 20px 20px 0 0; /* 上 右 下 左 */
   border-radius: 10px;
   max-width: 150px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.3);
 }
 .bouncing-brain {
-  font-size: 20px;
-  font-weight: bold;
-  text-align: center;
-  animation: bounce 2s infinite;
-}
-
-@keyframes bounce {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
+  float: right;
+  margin: 0 20px 0 0; /* 上 右 下 左 */
+  border-radius: 10px;
+  max-width: 150px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
 }
 .banner-container {
   position: relative;
