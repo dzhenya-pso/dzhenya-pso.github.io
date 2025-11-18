@@ -4,6 +4,7 @@
 </div>
 <!-- 动态GIF -->
   <img src="Fig/lufeithink.gif" alt="Brain, get a move on..." class="thinking-gif">
+  <div class="bouncing-brain">🧠 Brain, get a move on... 💭</div>
 <!-- 个人头像 -->
 <img src="Fig/lufei.jpg" alt="Zhenya Diao" class="profile-img">
 
