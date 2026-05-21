@@ -6,5 +6,5 @@
 
 3. Yu F, **Diao Z**, Wu H, et al. Leveraging Opposition-Based Learning in Particle Swarm Optimization for Effective Feature Selection. Computers, Materials & Continua, 2026, 87(1).[Paper](https://doi.org/10.32604/cmc.2025.072593)
 
-4. Yu F, **Diao Z**, Wu H, et al. DEMTFS: A Dynamic Evolutionary Multitasking Framework for High-Dimensional Feature Selection.
+4. Yu F., **Diao Z.**, Wu H., et al. DEMTFS: A dynamic evolutionary multitasking framework for high-dimensional feature selection [J]. Expert Systems with Applications, 2026, 326: 132787.[Paper](https://doi.org/10.1016/j.eswa.2026.132787)
 
